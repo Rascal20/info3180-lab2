@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<body>
+    <div class = "top">
+        <img src="{{ url_for('static', filename='StingRay.jpg') }}">
+        <h1>Rene Tim</h1>
+        <h6> @rdatim </h6>
+        <h6> Parham, Antigua & Barbuda </h6>
+        <h6> {{ date_joined }} </h6>
+    </div>
+    
+    <div class = "bottomDiv">
+        <p>I am currently a Meteorlogical Observer aiming at making a career switch to the field of Machine Learning and Artificial Intelligence.</p>
+        <div class= "numbers">
+            <h4> 46 </h4>
+            <h4> 374 </h4>
+            <h4> 416 </h4>
+        </div>
+        
+        <div class = "info">
+            <h4> Posts </h4>
+            <h4> Following </h4>
+            <h4> Followers </h4>
+        </div>
+        
+        <div class= "followBtn">
+            <button> Follow </button>
+        </div>
+    </div>
+</body>
+{% endblock %}
